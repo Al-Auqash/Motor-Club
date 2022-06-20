@@ -24,3 +24,41 @@ Route::get('/profile', function () {
 Route::get('/vision-and-mission', function () {
     return view('welcome');
 });
+
+Route::get('/product', function () {
+    return view('welcome');
+});
+
+Route::get('/contact', function () {
+    return view('welcome');
+});
+
+Route::get('/about', function () {
+    return view('welcome');
+});
+
+Route::get('/article', function () {
+    return view('welcome');
+});
+
+Route::get('/event', function () {
+    return view('welcome');
+});
+
+Route::get('/gallery', function () {
+    return view('welcome');
+});
+
+Route::get('/client', function () {
+    return view('welcome');
+});
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified'
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+});

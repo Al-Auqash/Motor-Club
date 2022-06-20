@@ -1,0 +1,49 @@
+:root {
+    --base-dark: #252525;
+    --base-grey: #414141;
+    --base-white: #fcfcfc;
+    --base-orange: #ff0000;
+    /* --base-font-family: "Akaya Kanadaka", cursive; */
+    --base-font-family-title: "Permanent Marker", cursive;
+    --base-second-font-family: "Nunito", sans-serif;
+}
+
+.bg-dark {
+    background-color: var(--base-dark);
+}
+
+.bg-grey {
+    background-color: var(--base-grey);
+}
+
+.bg-white {
+    background-color: var(--base-white);
+}
+
+.bg-orange {
+    background-color: var(--base-orange);
+}
+
+.text-dark {
+    color: var(--base-dark);
+}
+
+.text-grey {
+    color: var(--base-grey);
+}
+
+.text-white {
+    color: var(--base-white);
+}
+
+.text-orange {
+    color: var(--base-orange);
+}
+
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+    column-gap: 2rem;
+    row-gap: 2rem;
+}

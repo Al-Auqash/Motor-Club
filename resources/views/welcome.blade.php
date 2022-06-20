@@ -9,6 +9,9 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Permanent+Marker&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -21,6 +24,8 @@
         }
 
         body {
+            background-color: #252525;
+            color: #FCFCFC;
             margin: 0
         }
 
@@ -399,7 +404,7 @@
         }
     </style>
 
-    
+
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
@@ -407,11 +412,67 @@
         body {
             font-family: 'Nunito', sans-serif;
         }
+
+        :root {
+            --base-dark: #252525;
+            --base-grey: #414141;
+            --base-white: #fcfcfc;
+            --base-orange: #ff0000;
+            /* --base-font-family: "Akaya Kanadaka", cursive; */
+            --base-font-family-title: "Permanent Marker", cursive;
+            --base-second-font-family: "Nunito", sans-serif;
+        }
+
+        .bg-dark {
+            background-color: var(--base-dark);
+        }
+
+        .bg-grey {
+            background-color: var(--base-grey);
+        }
+
+        .bg-white {
+            background-color: var(--base-white);
+        }
+
+        .bg-orange {
+            background-color: var(--base-orange);
+        }
+
+        .text-dark {
+            color: var(--base-dark);
+        }
+
+        .text-grey {
+            color: var(--base-grey);
+        }
+
+        .text-white {
+            color: var(--base-white);
+        }
+
+        .text-orange {
+            color: var(--base-orange);
+        }
     </style>
 </head>
 
-<body class="antialiased">
-    <div id="root"></div>
+<body>
+    <div class="container-fluid h-100 m-0 p-0">
+        <div class="row">
+            <div id="navbar"></div>
+        </div>
+        <div class="row">
+            <div class="col bg-grey">
+                <div id="sidebar"></div>
+            </div>
+            <div class="col-11">
+                <div id="root"></div>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 
 </html>
