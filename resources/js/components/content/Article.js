@@ -1,11 +1,11 @@
 import React from 'react'
+import Card from "./Card";
 
 const Article = () => {
     return(
         <div>
-            <p>to learn more about the cycle of Leo</p>
-            <p>you can start from</p>
-            <a href="https://www.harley-davidson.com/id/id/index.html">click here</a>
+        <Card title="to learn more about the cycle of Leo" desc="you can start from https://www.harley-davidson.com/id/id/index.html" />
+            
         </div>
     )
 }
