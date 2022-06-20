@@ -1,13 +1,26 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 import Card from "./Card";
 
 const About = () => {
+    const [about, setAbout] = useState([]);
+    useEffect(() => {
+        axios
+            .get("/api/about")
+            .then((response) => {
+                setAbout(response.data);
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+    }, []);
+
+    // console.log(about);
     return (
         <div>
-            <Card
-                title="About Us"
-                desc="The Cycle of Leo was taken from the name of the way of life in a movie 'The Circle of Life' that has philosophy about circle that will always continue and has no end. therefore The Cycle of Leo was built with philosophy that the tire of the motorcycle will never stop"
-            />
+            {/* {about.map((about) => ( */}
+                <Card title="About Us" desc={about.about} />
+            {/* ))} */}
         </div>
     );
 };

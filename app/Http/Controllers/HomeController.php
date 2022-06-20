@@ -11,61 +11,48 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function home()
-    {
-        return view('main.home');
-    }
+    // public function home()
+    // {
+    //     return view('welcome');
+    // }
+
 
     public function profile()
     {
-        $profile = Club::pluck('profile')->first();
-        return view('main.profile',[
-            'profile' => $profile,
-        ]);
+        $profile = Club::first();
+
+        return $profile->toJson();
     }
 
     public function visionAndMission()
     {
-        $vision = Vision_and_mission::where('type',0)->first();
-        $missions = Vision_and_mission::where('type',1)->get();
-        return view('main.vision-and-mission',[
-            'vision' => $vision,
-            'missions' => $missions
-        ]);
+        $vam = Vision_and_mission::select('*')->get();
+
+        return $vam->toJson();
     }
 
     public function product()
     {
-        return view('main.product',[
-            'products' => Product::all(),
-        ]);
+        return Product::first()->toJson();
     }
 
     public function contact()
     {
-        return view('main.contact',[
-            'contact' => Club::first()
-        ]);
+        return Club::first()->toJson();
     }
 
     public function client()
     {
-        return view('main.client',[
-            'clients' => Client::all(),
-        ]);
+        return Client::all()->toJson();
     }
 
     public function gallery()
     {
-        return view('main.gallery',[
-            'galleries' => Gallery::all(),
-        ]);
+        return Gallery::all()->toJson();
     }
 
     public function about()
     {
-        return view('main.about-us',[
-            'company' => Club::first(),
-        ]);
+        return Club::first()->toJson();
     }
 }
