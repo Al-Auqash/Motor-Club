@@ -8,7 +8,7 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                <x-jet-welcome />
+                <h3 class="m-2">Welcome to The Cycle of Leo Dashboard</h3>
             </div>
         </div>
     </div>

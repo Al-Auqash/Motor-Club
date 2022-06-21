@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 /*
 |--------------------------------------------------------------------------
@@ -53,12 +54,14 @@ Route::get('/client', function () {
     return view('welcome');
 });
 
-Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified'
-])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
-});
+Route::prefix("dashboard")->middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])
+    ->group(function () {
+        Route::get('/', function () {
+            return view('dashboard');
+        })->name('dashboard');
+        Route::get('/client', [Dashboard::class, 'client'])->name('client');
+        Route::get('/club', [Dashboard::class, 'club'])->name('club');
+        Route::get('/gallery', [Dashboard::class, 'gallery'])->name('gallery');
+        Route::get('/product', [Dashboard::class, 'product'])->name('product');
+        Route::get('/vision-and-mission', [Dashboard::class, 'vision-and-mission'])->name('vision-and-mission');
+    });
