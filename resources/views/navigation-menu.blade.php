@@ -16,7 +16,7 @@
                         {{ __('Dashboard') }}
                     </x-jet-nav-link>
                 </div>
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                {{-- <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-jet-nav-link href="{{ route('client') }}" :active="request()->routeIs('client')">
                         {{ __('Client') }}
                     </x-jet-nav-link>
@@ -40,7 +40,7 @@
                     <x-jet-nav-link href="{{ route('vision-and-mission') }}" :active="request()->routeIs('vision-and-mission')">
                         {{ __('Vision and Mission') }}
                     </x-jet-nav-link>
-                </div>
+                </div> --}}
             </div>
 
             <div class="hidden sm:flex sm:items-center sm:ml-6">

@@ -13,40 +13,51 @@ class DashboardController extends Controller
 {
     public function profile()
     {
-        $profile = Club::first();
-
-        return $profile->toJson();
+        return view('', [
+            'profile' => Club::first()
+        ]);
     }
 
     public function visionAndMission()
     {
-        $vam = Vision_and_mission::select('*')->get();
-
-        return $vam->toJson();
+        return view('dashboard.vision-and-mission', [
+            'vam' => Vision_and_mission::select('*')->get(),
+        ]);
     }
 
     public function product()
     {
-        return Product::first()->toJson();
+        return view('dashboard.product', [
+            'product' => Product::first(),
+        ]);
     }
 
     public function contact()
     {
-        return Club::first()->toJson();
+        return view('dashboard.club', [
+            'club' => Club::first(),
+        ]);
     }
 
     public function client()
     {
-        return Client::all()->toJson();
+        $client = Client::all();
+        return view('dashboard.client', [
+            'client' => $client,
+        ]);
     }
 
     public function gallery()
     {
-        return Gallery::all()->toJson();
+        return view('dashboard.gallery', [
+            'gallery' => Gallery::all(),
+        ]);
     }
 
     public function about()
     {
-        return Club::first()->toJson();
+        return view('dashboard.club', [
+            'club' => Club::first(),
+        ]);
     }
 }

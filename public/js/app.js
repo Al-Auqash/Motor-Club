@@ -8432,7 +8432,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var Card = function Card(props) {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-    className: "card bg-orange m-4",
+    className: "card bg-dark-orange m-4",
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
       className: "card-body p-3",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
@@ -8800,7 +8800,7 @@ __webpack_require__.r(__webpack_exports__);
 var Homepage = function Homepage() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-      className: "card bg-orange m-4",
+      className: "card bg-dark-orange m-4",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
         className: "card-body p-3",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
@@ -14215,7 +14215,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ":root {\r\n    --base-dark: #252525;\r\n    --base-grey: #414141;\r\n    --base-white: #fcfcfc;\r\n    --base-orange: #ff0000;\r\n    /* --base-font-family: \"Akaya Kanadaka\", cursive; */\r\n    --base-font-family-title: \"Permanent Marker\", cursive;\r\n    --base-second-font-family: \"Nunito\", sans-serif;\r\n}\r\n\r\n.bg-dark {\r\n    background-color: var(--base-dark);\r\n}\r\n\r\n.bg-grey {\r\n    background-color: var(--base-grey);\r\n}\r\n\r\n.bg-white {\r\n    background-color: var(--base-white);\r\n}\r\n\r\n.bg-orange {\r\n    background-color: var(--base-orange);\r\n}\r\n\r\n.text-dark {\r\n    color: var(--base-dark);\r\n}\r\n\r\n.text-grey {\r\n    color: var(--base-grey);\r\n}\r\n\r\n.text-white {\r\n    color: var(--base-white);\r\n}\r\n\r\n.text-orange {\r\n    color: var(--base-orange);\r\n}\r\n\r\n\r\n.grid-wrapper {\r\n    display: grid;\r\n    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));\r\n    -moz-column-gap: 2rem;\r\n         column-gap: 2rem;\r\n    row-gap: 2rem;\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ":root {\r\n    --base-dark: #252525;\r\n    --base-grey: #414141;\r\n    --base-white: #fcfcfc;\r\n    --base-orange: #ff0000;\r\n    --base-dark-orange: #FF6107;\r\n    /* --base-font-family: \"Akaya Kanadaka\", cursive; */\r\n    --base-font-family-title: \"Permanent Marker\", cursive;\r\n    --base-second-font-family: \"Nunito\", sans-serif;\r\n}\r\n\r\n.bg-dark {\r\n    background-color: var(--base-dark);\r\n}\r\n\r\n.bg-grey {\r\n    background-color: var(--base-grey);\r\n}\r\n\r\n.bg-white {\r\n    background-color: var(--base-white);\r\n}\r\n\r\n.bg-orange {\r\n    background-color: var(--base-orange);\r\n}\r\n\r\n.bg-dark-orange {\r\n    background-color: var(--base-dark-orange);\r\n}\r\n\r\n.text-dark {\r\n    color: var(--base-dark);\r\n}\r\n\r\n.text-grey {\r\n    color: var(--base-grey);\r\n}\r\n\r\n.text-white {\r\n    color: var(--base-white);\r\n}\r\n\r\n.text-orange {\r\n    color: var(--base-orange);\r\n}\r\n\r\n\r\n.grid-wrapper {\r\n    display: grid;\r\n    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));\r\n    -moz-column-gap: 2rem;\r\n         column-gap: 2rem;\r\n    row-gap: 2rem;\r\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

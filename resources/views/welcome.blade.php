@@ -462,7 +462,7 @@
         <div class="row">
             <div id="navbar"></div>
         </div>
-        <div class="row">
+        <div class="row vh-100">
             <div class="col bg-grey">
                 <div id="sidebar"></div>
             </div>

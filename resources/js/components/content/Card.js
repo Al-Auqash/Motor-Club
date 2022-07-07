@@ -3,7 +3,7 @@ import "./../style.css"
 
 const Card = (props) => {
     return (
-        <div className="card bg-orange m-4">
+        <div className="card bg-dark-orange m-4">
                 <div className="card-body p-3">
                     <div className="row">
                         <div className="col">

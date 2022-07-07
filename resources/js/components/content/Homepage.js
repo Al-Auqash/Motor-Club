@@ -5,7 +5,7 @@ import "./../style.css"
 const Homepage = () => {
     return (
         <div>
-            <div className="card bg-orange m-4">
+            <div className="card bg-dark-orange m-4">
                 <div className="card-body p-3">
                     <div className="row">
                         <div className="col-lg-6">
